@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_package/main.dart';
+import 'package:flutter_test_package/pages/manager/presentation/page/manager_page.dart';
 import 'package:sizer/sizer.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -14,14 +15,27 @@ class _HomePageState extends State<HomePage> {
       height: 100.0.h,
       child: Column(
         children: [
-          FlatButton(onPressed: (){
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => MyHomePage(),
-              ),
-            );
-          }, child: Text("ارتباط باما")),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              FlatButton(onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyHomePage(),
+                  ),
+                );
+              }, child: Text("ارتباط باما")),
+              FlatButton(onPressed: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ManagerPage(),
+                  ),
+                );
+              }, child: Text("مدیریت")),
+            ],
+          ),
           Image.asset("asset/coming_soon.png",height: 80.0.h,),
         ],
       ),

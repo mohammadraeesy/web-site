@@ -44,7 +44,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
-  int _counter = 0;
   final TextEditingController nameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController phoneController = TextEditingController();
@@ -56,7 +55,6 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     super.initState();
   }
 
-  void _incrementCounter() {}
 
   @override
   Widget build(BuildContext context) {
@@ -126,21 +124,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(30))),
                             child: FlatButton(
-                              onPressed: () async {
-                                // Uri uri =
-                                //     Uri.parse("localhost/testPhp/testPhp.php");
-                                // final respunse =
-                                //     await http.Client().post(uri, body: json.encode({
-                                //   "massage": massageController.text,
-                                //   "phone": phoneController.text,
-                                //   "name": nameController.text,
-                                //   "email": emailController.text
-                                // }), headers: {
-                                //   'Content-Type':
-                                //       'application/json'
-                                // });
-                                // print(respunse.body.toString());
-                                bool emailValid = RegExp(
+                              onPressed: () async {                                bool emailValid = RegExp(
                                         r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                                     .hasMatch(emailController.text);
                                 if (!emailValid) {
