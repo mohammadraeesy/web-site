@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_test_package/main.dart';
-import 'package:flutter_test_package/pages/manager/presentation/page/manager_page.dart';
+import 'package:flutter_test_package/features/contact_us/presentation/pages/contact_us_page.dart';
+import '../../../manager/presentation/pages/manager_page.dart';
 import 'package:sizer/sizer.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MyHomePage(),
+                    builder: (context) => ContactUsPage(),
                   ),
                 );
               }, child: Text("ارتباط باما")),

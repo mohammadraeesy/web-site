@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_test_package/pages/manager/presentation/bloc/mager_bloc_cubit.dart';
+import '../manager/mager_bloc_cubit.dart';
 import 'package:sizer/sizer.dart';
 
 class ManagerPage extends StatefulWidget {

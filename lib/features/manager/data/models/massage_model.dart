@@ -1,4 +1,4 @@
-import 'package:flutter_test_package/entities/massage_entity.dart';
+import '../../domain/entities/massage_entity.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'massage_model.g.dart';

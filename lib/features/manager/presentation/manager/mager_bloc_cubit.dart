@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
-import 'package:flutter_test_package/entities/massage_entity.dart';
-import 'package:flutter_test_package/models/massage_model.dart';
+import '../../domain/entities/massage_entity.dart';
+import '../../data/models/massage_model.dart';
 import 'package:meta/meta.dart';
 import 'package:http/http.dart' as http;
 
