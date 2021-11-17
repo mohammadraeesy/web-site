@@ -1,4 +1,4 @@
-part of '../../../../features/manager/presentation/manager/mager_bloc_cubit.dart';
+part of '../../../../features/manager/presentation/cubit/manager_bloc_cubit.dart';
 
 @immutable
 abstract class ManagerBlocState {}

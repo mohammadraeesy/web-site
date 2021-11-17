@@ -6,7 +6,7 @@ import '../../data/models/massage_model.dart';
 import 'package:meta/meta.dart';
 import 'package:http/http.dart' as http;
 
-part 'mager_bloc_state.dart';
+part 'manager_bloc_state.dart';
 
 class ManagerBlocCubit extends Cubit<ManagerBlocState> {
   ManagerBlocCubit() : super(ManagerBlocInitial());
